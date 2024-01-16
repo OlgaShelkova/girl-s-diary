@@ -52,7 +52,18 @@
         </div>
       </section>
       <div class="mobile__footer">
-          <a href="#"><img class="footerIcon1" src="/assets/images/icons/like_icon.svg" alt="heart" /></a>
+        <div id="modal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <p id="adviceText">Советы для продуктивности от ДСД.</p>
+              <br>
+          </div>
+      </div>
+      
+      <a href="#" onclick="showAdvice()">
+          <img class="footerIcon1" src="/assets/images/icons/like_icon.svg" alt="heart" />
+      </a>
+      
           <a href="#"><img  class="footerIcon2" src="/assets/images/icons/share_arrow_icon.svg" alt="share icon" /></a>
           <div class="copyright">
             <p class="copyright__text">&copy Copyright 2024 by Butterflies team</p>
