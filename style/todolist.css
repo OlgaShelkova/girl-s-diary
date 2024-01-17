@@ -1,0 +1,107 @@
+.mobile__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.mobile__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.copyright__text{
+    font-size: 10px;
+}
+.body{
+    font-family: sans-serif;
+    background-color: white;
+}
+#todolistImg{
+    width: 40%;
+    border-radius: 20px;
+    border: 10px;
+    margin-bottom: 5px;
+}
+.mobile{
+    width: 360px;
+    height: 730px;
+    background: #EF8B98;
+    
+}
+.sectionMainName{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px;
+    color: #E9DCE7;
+}
+#name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.taskArea{
+    height:120px;
+    width:85%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:green;
+    font-style: italic;
+}  
+#addButton{
+    color:#f14377;
+    border-radius: 4px;
+    border-color: #c17882;
+}
+
+.formToDo input[type="text"]:focus {
+    background-color: #e0a3b6; 
+    border-radius: 2px;
+    color: #050505;
+    box-shadow: inset 0 0 0 2px  #f14377 !important;
+}
+.finishedTasks{
+    color:green;
+    height:200px;
+    width:85%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gifContainer{
+display: none;  
+position:absolute;
+
+}
+.giph{
+    width: 155%;
+    height: 308px;
+margin-left: -90px;
+
+}
+
+#clearButton{
+    color:#f14377;
+    border-radius: 4px;
+    border-color: #c17882;
+    justify-content: flex-end;
+}
+.mobile__footer{
+    width:auto;
+    height:10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
