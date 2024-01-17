@@ -2,12 +2,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
-.mobile__footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.mobile__head{
+    display:flex;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    linear-gradient(90deg, #E66777 0%, rgba(240, 161, 171, 0.99) 25%, #FAEBCB 50%);
+    ;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.iconsHead{
+    display:flex;
+    flex-direction: row;
+}
+#iconEmotion{
+    width:13%;
+    margin-left: 17%;
+    height: 37px;
+}
+#iconCalculate{
+    width:13%;
+    height: 37px;
+    margin-left:1%;
+}
+
+.mainLogo{
+    width: 40%;
+    margin-left: 38%;
+    margin-top:5px;
 }
 .menu{
     display: flex;
@@ -17,19 +39,13 @@
 .copyright__text{
     font-size: 10px;
 }
-.body{
-    font-family: sans-serif;
-    background-color: white;
-}
 #todolistImg{
     width: 40%;
     border-radius: 20px;
-    border: 10px;
-    margin-bottom: 5px;
 }
 .mobile{
     width: 360px;
-    height: 730px;
+    height: 750px;
     background: #EF8B98;
     
 }
@@ -41,15 +57,21 @@
     border: 5px;
     color: #E9DCE7;
 }
-#name{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: lighter;
+@font-face{
+    font-family:'Lobster-Regular';
+    src: url("/assets/fonts/Lobster-Regular.ttf");
+}
+#nameMain{
+    font-family: 'Lobster-Regular';
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-shadow: 3px 4px 4px rgb(38, 37, 37);
 }
 
 .taskArea{
-    height:120px;
+    height:110px;
     width:85%;
     margin: 5px;
     display: flex;
@@ -58,12 +80,26 @@
     color:green;
     font-style: italic;
 }  
+.todo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+    margin-left: 15%;
+}
 #addButton{
     color:#f14377;
-    border-radius: 4px;
+    border-radius: 15px;
+    width:250px;
+    height:45px;
     border-color: #c17882;
+    margin-top: 5px;
 }
+#taskInput{
+    width:240px;
+    height:30px;
 
+}
 .formToDo input[type="text"]:focus {
     background-color: #e0a3b6; 
     border-radius: 2px;
@@ -72,7 +108,7 @@
 }
 .finishedTasks{
     color:green;
-    height:200px;
+    height:150px;
     width:85%;
     margin: 5px;
     display: flex;
@@ -83,25 +119,70 @@
 #gifContainer{
 display: none;  
 position:absolute;
-
 }
 .giph{
-    width: 155%;
-    height: 308px;
-margin-left: -90px;
-
+    width: 255px;
+    height: 235px;
+    margin-left: -90px;
 }
-
 #clearButton{
     color:#f14377;
-    border-radius: 4px;
+    border-radius: 15px;
+    width:250px;
+    height:45px;
     border-color: #c17882;
     justify-content: flex-end;
 }
-.mobile__footer{
-    width:auto;
-    height:10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+
+.mobile__footer {
+    position: fixed;
+    bottom: 0;
+    padding: 10px; 
+}
+
+.footerIcon1,
+.footerIcon2 {
+    width: 30px; 
+    margin-top: 5px; 
+    margin-left: 220px;
+}
+
+.footerIcon2 {
+    margin-left: 5px; 
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright__text {
+    margin: 5px 0; 
+}
+/*Стили для совета*/
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 182, 193, 0.7); 
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }
