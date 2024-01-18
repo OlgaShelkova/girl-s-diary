@@ -84,3 +84,25 @@ document.getElementById('clearButton').addEventListener('click', function () {
 
     clearButton.style.display = 'block';
 });
+
+//код для функции с советами
+let modal = document.getElementById('modal');
+let adviceText = document.getElementById('adviceText');
+
+function showAdvice() {
+    modal.style.display = 'block';
+    
+    // Первый клик
+    adviceText.textContent = 'Советы для продуктивности от ДСД.\n' +
+                             '1. Начинайте день в одно и то же время\n' +
+                             '2. Повышайте концентрацию\n' +
+                             '3. Следите за качеством сна\n' +
+                             '4. Повышайте выносливость мозга\n' +
+                             '5. Прокачивайте навык решения задач\n' +
+                             '6. Следить за водным балансом\n' +
+                             '7. Верить в себя!';
+}
+
+function closeModal() {
+    modal.style.display = 'none';
+}
