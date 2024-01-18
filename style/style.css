@@ -24,6 +24,7 @@
     border: 10px;
     background: rgb(241,77,118);
     background: linear-gradient(90deg, rgba(241,77,118,0.8407738095238095) 20%, rgba(235,178,198,1) 75%, rgba(233,220,231,1) 98%);
+    border-radius: 15px;
 }
 .mobile{
     width: 360px;
@@ -35,25 +36,38 @@
 width: 250px;
 height: 100px;
 background-color: #e9dce7;
-border-radius: 3px;
+border-radius: 15px;
 border-color: #d88b9e;
 margin: 5px;
+:hover{
+    text-decoration: underline;
+    color: red;
+}
+
 }
 #finances{
     width: 250px;
     height: 100px;
     background-color: #f1b6c5;
-    border-radius: 3px;
+    border-radius: 15px;
     border-color: #faebcb;
     margin: 5px;
+    :hover{
+        text-decoration: underline;
+        color: red;
+    }
 }
 #habbits{
     width: 250px;
 height: 100px;
 background-color: #faebcb;
-border-radius: 3px;
+border-radius: 15px;
 border-color: #faebcb;
 margin: 5px;
+:hover{
+    text-decoration: underline;
+    color: red;
+}
 }
 .mobile__content{
     display: flex;
@@ -74,3 +88,25 @@ margin: 5px;
 .copyright__text{
     font-size: 10px;
 }
+
+/* ********* */
+
+.header{
+    background-color: linear-gradient(0deg, rgba(206, 17, 17, 0.1), rgba(216, 14, 14, 0.1)), 
+    linear-gradient(90deg, #E66777 0%, rgba(240, 161, 171, 0.99) 25%, #FAEBCB 50%);
+}
+
+  #emoticon{
+    height: 35px;
+    width: 35px;
+    float: right;
+     /* border: solid 1px red; */
+  }
+
+  #checklist{
+    height: 35px;
+    width: 35px;
+    float: right;
+ /* border: solid 1px red; */
+
+  }
