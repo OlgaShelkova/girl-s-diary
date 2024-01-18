@@ -10,50 +10,133 @@
     <link rel="shortcut icon" href="" type="" />
 </head>
   <body>
-    <!-- 
-    <div class="container">
-      <header class="header">
-        <nav class="menu">
-          <div class="app-logo">
-            <a href="index.html"
-              ><img
-                class="logo_icon"
-                src=""
-                alt="icon for account"
-            /></a>
-    </div> -->
-
 
       <div class="container">
-			<header class="header">1</header>
+			<header class="header">
+          <div class="iconsHead">
+          <img src="./assets-finances/diary.png" id="mainLogo" alt="logo" />
+          <img src="./assets-finances/modernGirl.png" id="mainLogo2" alt="logo" />
+          <a href="/girl-s-diary/habbits-tracker.html"><img src="/girl-s-diary/assets/images/icons/smiley-face-emoticon.png" id="emoticon" alt="smiley-face-emoticon" /></a>
+          <a href="/girl-s-diary/to-do-list.html"><img src="/girl-s-diary/assets/images/icons/checklist.png" id="checklist" alt="checklist" /></a>
+          </div>
+      </header>
 			<div class="photo-finances">
         <img src="./assets-finances/photo-finances.png" alt="девушка с ноутбуком" />
       </div>
-			<div class="title">УЧЕТ ФИНАНСОВ</div>
-			<div class="calculator">
-        <button class="btn-calculator"><img src="./assets-finances/btn-calculate.png" alt="кнопка-калькулятор"></button>
+			<div class="title"><h2>УЧЕТ ФИНАНСОВ</h2></div>
+
+			<div class="income">    <!-- начало income Доходов -->
+        <h3>Доход в месяц</h3>
+        <div class="input-wrapper">  <!-- начало блока с инпутами для дохода -->
+          <input 
+          type="number" 
+          placeholder="Зарплата" 
+          id="income-salary"
+          class="input"
+          >
+          <input 
+          type="number"
+          placeholder="Доп доход" 
+          id="income-another"
+          class="input"
+          >
+          <input 
+          type="number"
+          placeholder="Доп доход" 
+          id="income-another2"
+          class="input"
+          >
+        </div>           <!-- конец инпутов для дохода -->
+
+      </div>             <!-- закрывашка income -->
+
+			<div class="costs">    <!-- начало Расходов -->
+        <h3>Расходы</h3>
+        <div class="input-wrapper">  <!-- начало блока с инпутами для расхода -->
+          <input 
+          type="number" 
+          placeholder="Аренда квартиры" 
+          id="costs-apartament"
+          class="input"
+          >
+          <input 
+          type="number"
+          placeholder="Кредиты" 
+          id="costs-credits"
+          class="input"
+          >
+          <input 
+          type="number"
+          placeholder="Иные расходы" 
+          id="costs-another"
+          class="input"
+          >
+        </div>           <!-- конец инпутов для расхода -->
+      </div>      <!-- закрывашка расходов -->
+
+
+      <div class="total-numb">        <!-- открывашка значений для вычисления -->
+		<div class="total-numb-month">
+        <h6>Доступно в месяц(без копилки)</h6>
+    <input 
+        type="number" 
+        class="total"
+        id="total-month"
+        value="0"
+        readonly
+        >
+</div>
+<div class="total-numb-year">
+        <h6>Накопим за год</h6>
+        <input 
+            type="number" 
+            class="total"
+            id="total-year"
+            value="0"
+            readonly
+            >
+</div>
+      </div>            <!-- закрывашка значений для вычисления -->
+	
+      <div class="money-box">
+        <h6>Копилка (сколько откладываем?)</h6>
+        <input type="range" min="0" max="100" value="0" id="money-box-range">
+        <div><span id="total-precents">0</span>%</div>
+
       </div>
-			<div class="current-balance">
-        <button class="btn-current-balance">Текущий баланс</button>
+      <div class="result-block">
+        <div class="tottal-numb">
+          <h6>Копим:</h6>
+          <input 
+          type="number" 
+          value="0" 
+          id="accumulation"
+          readonly
+          >
+        </div>
+        <div class="total-numb">
+          <h6>Тратим:</h6>
+          <input 
+          type="number" 
+          value="0" 
+          id="spend"
+          readonly
+          >
+        </div>
       </div>
-			<div class="revenue">
-        <button class="btn-revenue">Доходы</button>
+      <div class="advice">
+        <button id="btnAdvice">Хочу совет &#4326;</button>
       </div>
-      <div class="expenses">
-        <button class="btn-expenses">Расходы</button>
-      </div>
+
+
       <footer class="footer">
-    <div class="icons">
-                        <a href="#"><img src="./assets/icons/Facebook.svg" alt="Facebook" /></a>
-                        <a href="#"><img src="assets/icons/Instagram.svg" alt="Instagram" /></a>
-                        <a href="#"><img src="assets/icons/LinkedIn.svg" alt="LinkedIn" /></a>
-                        <a href="#"><img src="assets/icons/Twitter.svg" alt="Twitter" /></a>
-                    </div>
-                <div class="copyright">
-                    <p class="copyright__text"> &copy Copyright 2022 by Malu Technologies Pvt Ltd</p>
-                </div>
+        <a href="#"><img  class="footerIcon2" src="/girl-s-diary/assets/images/icons/share_arrow_icon.svg" alt="share icon" /></a>
+        <div class="copyright">
+          <p class="copyright__text">&copy Copyright 2024 by Butterflies team</p>
+        </div>
+
       </footer>
     </div>   <!-- закрывашка контейнера -->
-  <script></script>
+  <script src="./assets-finances/finance.js"></script>
   </body>
 </html>
