@@ -5,20 +5,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diary of Modern Girl</title>
-    <link rel="stylesheet" href="" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href=".\style\normalize.css" />
+    <link rel="stylesheet" href=".\style\style.css" />
+    <link rel="stylesheet" href=".\style\tracker.css" />
     <link rel="shortcut icon" href="" type="" />
 </head>
   <body>
+    <div class="mobile__head">
+      <div class="header__logo-container">
+      <a href="./index.html" ><img src="./assets/images/logo/logo.png" class="mainLogo" alt="logo"></a>
+      <a href="./to-do-list.html" ><img src="./assets/images/icons/checklist.png" id="iconChecklist" alt="list"></a>
+      <a href="./finances.html"><img src="./assets/images/icons/wallet.png" id="iconCalculate" alt="walet"></a>
+      </div>    
 
+  </div>
+<div class="mobile__content">
+<img src=".\assets\images\emotional-lady.jpg" id="emotional-img" alt="emotional girl">
+<div class="sectionMainName">
+<h1 id="nameMain">Трекер эмоций</h1>
+</div>
+<h2>Как вы себя чувствуете?</h2>
+<!-- Кнопка для получения текущей даты -->
+<button  id="calendar_date" onclick="getToday()">
+  <img src=".\assets\images\emotional\calendar_date.png" alt="Календарь">
+</button>
+<!-- Элемент для отображения текущей даты -->
+<div id="dateDisplay"></div>
+<!-- Список картинок -->
+<div id="image-list">
+  <img src=".\assets\images\emotional\happy-emoji.png" alt="happy fase">
+  <img src=".\assets\images\emotional\smile-emoji.png" alt="smile fase">
+  <img src=".\assets\images\emotional\peaceful-emoji.png" alt="peaceful fase">
+  <img src=".\assets\\images\\emotional\\boring-emoji.png" alt="boring fase">
+  <img src=".\assets\images\emotional\cry-emoji.png" alt="cry fase">
+</div>
+<!-- Кнопка для добавления выбранной картинки -->
+<button id="button-img" onclick="addImage()">Добавь картинку трекер</button>
+<!-- Клетки для отображения выбранных картинок -->
+<div id="image-grid"></div>
 
-
-    
-    
                 </div>
                 <div class="copyright">
-                    <p class="copyright__text"> &copy Copyright 2022 by Malu Technologies Pvt Ltd</p>
+                    <p class="copyright__text"> &copy Copyright 2024 by Butterflies team</p>
                 </div>
-     <script></script>
+     <script async src="./style/tracker.js"></script>
   </body>
 </html>
