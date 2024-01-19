@@ -12,26 +12,30 @@
   <body>
 
 <div class="mobile">
+  <!-- Секция с заголовком -->
   <div class="mobile__head">
       <div class="iconsHead">
-      <img src="./assets/images/logo/logo.png" class="mainLogo" alt="logo">
-      <img src="./assets/images/icons/smiley-face-emoticon.png" id="iconEmotion" alt="face">
-      <img src="./assets/images/icons/wallet.png" id="iconCalculate" alt="walet">
+      <a href="./index.html"><img src="./assets/images/logo/logo.png" class="mainLogo" alt="logo"></a>
+      <a href="./habbits-tracker.html"><img src="./assets/images/icons/smiley-face-emoticon.png" id="iconEmotion" alt="face"></a>
+      <a href="./finances.html"><img src="./assets/images/icons/wallet.png" id="iconCalculate" alt="walet"></a>
       </div>
-    <!-- <img src="" id="icon_" alt=""> -->
   </div>
+  <!-- Блок с контентом  -->
     <div class="mobile__content">
       <img src="./assets/images/list-lady.jpg" id="todolistImg" alt="girl with macbook">
       <div class="sectionMainName">
         <h1 id="nameMain">Список дел</h1>
       </div>
+      <!-- Секция с задачами к выполнению и кнопкой "Добавить"  -->
       <section class="todo">
         <form class="formToDo" onsubmit="addNewTask(event)">
             <input type="text" id="taskInput" placeholder="         Введите текст задачи">
             <button id="addButton" type="submit">Добавить в список</button>
         </form>
       </section>
+      <!-- Секция со списком задач -->
       <section class="taskArea">
+        <!-- Скрытый блок с советами -->
         <div class="adviceContent">
           <h2>Советы для продуктивности от ДСД.</h2> 
           <p>1. Начинайте день в одно и то же время</p>
@@ -43,13 +47,14 @@
         </div>
       </section>
       <button id="clearButton" type="button">Очистить</button>
+      <!-- Секция с завершенными заданиями -->
       <section class="finishedTasks">
         <div id="gifContainer" class="gif-container">
           <iframe src="https://giphy.com/embed/Xf8OQpipEl7eMlXtsH" width="180" height="155" frameBorder="0" class="giph" allowFullScreen></iframe>
           <img src="" id="iconForHints">
         </div>
-        
       </section>
+      <!-- Футер с активными иконками -->
       <div class="mobile__footer">
       <a href="#" onclick="toggleAdvice()">
           <img class="footerIcon1" src="/assets/images/icons/like_icon.svg" alt="heart" />
@@ -61,7 +66,7 @@
       </div>
   </div>
 </div>
-
+<!-- скрипт -->
     <script async src="./style/todo.js"></script>
   </body>
 </html>
