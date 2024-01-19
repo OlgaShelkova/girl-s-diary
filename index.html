@@ -10,51 +10,35 @@
     <link rel="shortcut icon" href="" type="" />
 </head>
   <body>
-<!-- 
-    <div class="container">
-      <header class="header">
-        <nav class="menu">
-          <div class="app-logo">
-            <a href="index.html"
-              ><img
-                class="logo_icon"
-                src=""
-                alt="icon for account"
-            /></a>
-    </div> -->
-<div class="mobile">
-  <!-- Заоловок с лого и доп.информацией -->
-  <div class="mobile__head">
-    <img src="" id="mainLogo" alt="logo">
-    <img src="" id="icon_" alt="">
-    <img src="" id="icon_" alt="">
-    <img src="" id="icon_" alt="">
-  </div>
-  <!-- Основной контент приложения -->
-  <div class="mobile__content">
-    <img src="./assets/images/modern-lady.jpg" id="mainImg" alt="girl with macbook">
-    <div class="applicationName">
-      <h1 id="name">Дневник современной девушки</h1>
+
+  <div class="mobile">
+    <!-- Заоловок с лого и доп.информацией -->
+    <div class="mobile__head">
+        <div class="iconsHead">
+          <img src="./assets/images/logo/logo.png" class="mainLogo" alt="logo">
+          <a href=""><img src="/assets/images/icons/checklist.png" id="iconChecklist" alt="face"></a>
+          <a href=""><img src="./assets/images/icons/wallet.png" id="iconCalculate" alt="walet"></a>
+        </div>
     </div>
+  <!-- Основной контент приложения -->
+    <div class="mobile__content">
+      <img src="./assets/images/modern-lady.jpg" id="mainImg" alt="girl with macbook">
+        <div class="applicationName">
+          <h1 id="name">Дневник современной девушки</h1>
+        </div>
       <div class="menu">
         <button id="toDoList" onclick="">Список дел</button>
         <button id="finances" onclick="">Учет финансов</button>
-        <button id="habbits" onclick="">Трекер</button>
+        <button id="tracker" onclick="">Трекер эмоций</button>
       </div>
-  </div>
+    </div>
   <!-- Футер с иконками соцсетей и значком копирайт -->
-  <div class="mobile__footer">
-    <div class="icons">
-      <a href="#"><img src="" alt="Facebook" /></a>
-      <a href="#"><img src="" alt="Instagram" /></a>
-      <a href="#"><img src="" alt="VK" /></a>
+    <div class="mobile__footer">
+      <div class="copyright">
+        <p class="copyright__text">&copy Copyright 2024 by Butterflies team</p>
+      </div>
     </div>
-    <div class="copyright">
-      <p class="copyright__text">&copy Copyright 2024 by Butterflies team</p>
-    </div>
-  </div>
-</div>    
-
+  </div>    
     <script async src="./style/script.js"></script>
   </body>
 </html>
