@@ -32,6 +32,15 @@
         </form>
       </section>
       <section class="taskArea">
+        <div class="adviceContent">
+          <h2>Советы для продуктивности от ДСД.</h2> 
+          <p>1. Начинайте день в одно и то же время</p>
+          <p>2. Повышайте концентрацию</p>
+          <p>3. Следите за качеством сна</p>
+          <p>4. Повышайте выносливость мозга</p>            
+          <p>5. Прокачивайте навык решения задач</p>  
+          <p>7. Верьте в себя!</p>
+        </div>
       </section>
       <button id="clearButton" type="button">Очистить</button>
       <section class="finishedTasks">
@@ -39,20 +48,12 @@
           <iframe src="https://giphy.com/embed/Xf8OQpipEl7eMlXtsH" width="180" height="155" frameBorder="0" class="giph" allowFullScreen></iframe>
           <img src="" id="iconForHints">
         </div>
+        
       </section>
       <div class="mobile__footer">
-        <div id="modal" class="modal">
-          <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <p id="adviceText">Советы для продуктивности от ДСД.</p>
-              <br>
-          </div>
-      </div>
-      
-      <a href="#" onclick="showAdvice()">
+      <a href="#" onclick="toggleAdvice()">
           <img class="footerIcon1" src="/assets/images/icons/like_icon.svg" alt="heart" />
       </a>
-      
           <a href="https://blog.mann-ivanov-ferber.ru/2016/07/28/30-sovetov-dlya-povysheniya-produktivnosti/"><img  class="footerIcon2" src="/assets/images/icons/share_arrow_icon.svg" alt="share icon" /></a>
           <div class="copyright">
             <p class="copyright__text">&copy Copyright 2024 by Butterflies team</p>
