@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diary of Modern Girl</title>
-    <link rel="stylesheet" href=".\style\normalize.css" />
-    <link rel="stylesheet" href=".\style\style.css" />
-    <link rel="stylesheet" href=".\style\tracker.css" />
-    <link rel="shortcut icon" href="" type="" />
+    <link rel="stylesheet" href="./style/normalize.css" >
+   <!--  <link rel="stylesheet" href="./style/style.css" >-->
+    <link rel="stylesheet" href="./style/tracker.css" >
+
 </head>
   <body>
     <div class="mobile__head">
@@ -40,14 +40,29 @@
   <img src=".\assets\images\emotional\cry-emoji.png" alt="cry fase">
 </div>
 <!-- Кнопка для добавления выбранной картинки -->
-<button id="button-img" onclick="addImage()">Добавь картинку трекер</button>
+<button id="button-img" onclick="addImage()">Добавь картинку в трекер</button>
+
 <!-- Клетки для отображения выбранных картинок -->
 <div id="image-grid"></div>
 
-                </div>
+<!-- Блок советов -->
+<h2>Нажми, если нужна поддержка</h2>
+<a href="#" onclick="toggleAdvice()">
+    <img class="footerIcon1" src="./assets/images/icons/like_icon.svg" alt="heart" >
+</a>
+<div id="advice"></div>
+</div >
+
+<!-- футер -->
+<div class="mobile__footer">
+  
+    <a href="https://blog.mann-ivanov-ferber.ru/2016/07/28/30-sovetov-dlya-povysheniya-produktivnosti/">
+    <img  class="footerIcon2" src="./assets/images/icons/share_arrow_icon.svg" alt="share icon" >
+    </a>
                 <div class="copyright">
                     <p class="copyright__text"> &copy Copyright 2024 by Butterflies team</p>
                 </div>
+</div>
      <script async src="./style/tracker.js"></script>
   </body>
 </html>
