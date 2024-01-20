@@ -16,9 +16,7 @@
 }
 .mobile__head{
     display:block;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    linear-gradient(90deg, #E66777 0%, rgba(240, 161, 171, 0.99) 25%, #FAEBCB 50%);
-    ;
+    background: linear-gradient(90deg, #E66777 0%, rgba(240, 161, 171, 0.99) 25%, #FAEBCB 50%);
     flex-direction: row;
 }
 .iconsHead{
@@ -93,7 +91,7 @@
     margin: 15px;
     box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
     :hover{
-      
+    
         color: red;
     }
 }
@@ -106,7 +104,7 @@
     margin: 15x;
     box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
     :hover{
-      
+    
         color: red;
     }
 }
