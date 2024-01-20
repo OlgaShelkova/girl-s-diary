@@ -1,19 +1,19 @@
 /*шрифт заголовков*/
 @font-face {
     font-family: 'Lobster-Regular';
-    src: url("./assets/fonts/Lobster-Regular.ttf");
+    src: url("/girl-s-diary/assets/fonts/Lobster-Regular.ttf");
     font-weight: 400;
 }
 /*шрифт подсказок*/
 @font-face {
     font-family: 'Montserrat';
-    src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf");
+    src: url("/girl-s-diary/assets/fonts/Montserrat-VariableFont_wght.ttf");
     font-weight: 400;
 }
 /*шрифт кнопок*/
 @font-face { 
   font-family: 'Sawarabi Gothic';
-  src: url("./assets/fonts/SawarabiGothic-Regular.ttf");
+  src: url("/girl-s-diary/assets/fonts/SawarabiGothic-Regular.ttf");
   font-weight: 400;
 }
 
@@ -111,7 +111,7 @@ background-color: #FAEBCB;
 }
 #dateDisplay, #advice {
 text-align: center;
-font-family: 'Montserrat', sans-serif;;
+font-family: 'Montserrat', sans-serif;
 font-size: 15px;
 font-style: normal;
 font-weight: 400;
