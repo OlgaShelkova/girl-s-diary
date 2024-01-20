@@ -6,40 +6,40 @@
 }
 /*шрифт подсказок*/
 @font-face {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat-VariableFont_wght';
     src: url("/assets/fonts/Montserrat-VariableFont_wght.ttf");
     font-weight: 400;
 }
 /*шрифт кнопок*/
 @font-face { 
-    font-family: 'Sawarabi Gothic', sans-serif;
+    font-family: 'SawarabiGothic-Regular';
     src: url("/assets/fonts/SawarabiGothic-Regular.ttf");
     font-weight: 400;
 }
 /* Заголовок */
 .mobile__head{
     display:flex;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    linear-gradient(90deg, #E66777 0%, rgba(240, 161, 171, 0.99) 25%, #FAEBCB 50%);
-    ;
+    background: linear-gradient(90deg, #E66777 0%, rgba(240, 161, 171, 0.99) 25%, #FAEBCB 50%);
     flex-direction: row;
     margin-bottom: 10px;
 }
 .iconsHead{
     display:flex;
     flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: center;
+    margin-left: 50px;
 }
 #iconEmotion{
     width:100%;
-    margin-left: 120%;
     height: 40px;
-    margin-top:10px;
+
 }
 #iconCalculate{
     width:100%;
-    margin-left:140%;
     height: 40px;
-    margin-top:10px;
+    margin-left: 10%;
 }
 .mainLogo{
     width: 77%;
@@ -63,7 +63,7 @@
 }
 .mobile{
     width: 360px;
-    height: 750px;
+    height: 110vh;
     background: #EF8B98;
     
 }
@@ -99,23 +99,28 @@
     flex-direction: column;
     align-items: center;   
     justify-content: center;
-    margin-left: 15%;
+    margin-left: 7%;
 }
 /* Стили для кнопки "Добавить в список" */
 #addButton{
-    color:#f14377;
-    border-radius: 15px;
-    width:250px;
-    height:45px;
+
+    width: 280px;
+    height: 60px;
+    background-color: #f5d1d6;
+    border-radius: 30px;
     border-color: #c17882;
-    margin-top: 5px;
-    font-family: 'Sawarabi Gothic', sans-serif;
+    margin: 15px;
+    color:#f14377;
+    font-family: 'SawarabiGothic-Regular';
+    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
 }
 /* Стили для ввода текста */
 #taskInput{
-    width:240px;
-    height:30px;
-
+    width:270px;
+    height:60px;
+    margin-left: 5%;
+    border-radius: 30px;
+    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .formToDo input[type="text"]:focus {
     background-color: #e0a3b6; 
@@ -145,13 +150,15 @@ position:absolute;
 }
 /* Кнопка очистить */
 #clearButton{
-    color:#f14377;
-    border-radius: 15px;
-    width:250px;
-    height:45px;
+    width: 280px;
+    height: 60px;
+    background-color: #f5d1d6;
+    border-radius: 30px;
     border-color: #c17882;
-    justify-content: flex-end;
-    font-family: 'Sawarabi Gothic', sans-serif;
+    margin: 15px;
+    color:#f14377;
+    font-family: 'SawarabiGothic-Regular';
+    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
 }
 /* Секция футера */
 .mobile__footer {
@@ -181,15 +188,16 @@ position:absolute;
 /*Стили для совета*/
 
 .adviceContent{
+    font-style: italic;
     position:absolute;
     width: 20%;
     background: #faf9fa;
-    padding: 10px;
+    padding: 5px;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 40px;
     color:#f14377;
     visibility: hidden; 
     opacity: 0;
     transition: 0.7s;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat-VariableFont_wght';
 }
