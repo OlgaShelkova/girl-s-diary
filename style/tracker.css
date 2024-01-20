@@ -1,19 +1,19 @@
 /*шрифт заголовков*/
 @font-face {
     font-family: 'Lobster-Regular';
-    src: url("../fonts/Lobster-Regular.ttf");
+    src: url("./assets/fonts/Lobster-Regular.ttf");
     font-weight: 400;
 }
 /*шрифт подсказок*/
 @font-face {
     font-family: 'Montserrat';
-    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+    src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf");
     font-weight: 400;
 }
 /*шрифт кнопок*/
 @font-face { 
   font-family: 'Sawarabi Gothic';
-  src: url("../fonts/SawarabiGothic-Regular.ttf");
+  src: url("./assets/fonts/SawarabiGothic-Regular.ttf");
   font-weight: 400;
 }
 
