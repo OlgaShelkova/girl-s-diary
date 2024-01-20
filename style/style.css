@@ -1,0 +1,150 @@
+
+.mainLogo{
+    width: 40%;
+    margin-left: 25%;
+    margin-top:5px;
+}
+.mobile__head{
+    display:block;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    linear-gradient(90deg, #E66777 0%, rgba(240, 161, 171, 0.99) 25%, #FAEBCB 50%);
+    ;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.iconsHead{
+    display:flex;
+    flex-direction: row;
+    margin-left: 10%;
+}
+
+#iconChecklist{
+    width:100%;
+    margin-left: 50%;
+    height: 37px;
+}
+#iconCalculate{
+    width:100%;
+    height: 37px;
+    margin-left:60%;
+} 
+/*тело страницы*/
+.body{
+    font-family: sans-serif;
+    background-color: white;
+}
+#mainImg{
+    width: 196px;
+    height: 190px;
+    border-radius: 20px;
+    border: 10px;
+    margin-bottom: 10px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#name{
+    font-size: 25px;
+    margin-left: 29px;
+    color: #E66777;
+    border-color: #F1B6C5;
+    border: 1px;
+    font-weight: 400px;
+    text-shadow: 3px 2px 3px rgb(210, 174, 174);
+    font-family: 'RubikMonoOne-Regular';
+}
+@font-face {
+    font-family: 'RubikMonoOne-Regular';
+    src: url("/assets/fonts/Montserrat-VariableFont_wght.ttf")
+}
+.applicationName{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(241,77,118);
+    background: linear-gradient(90deg, rgba(241,77,118,0.8407738095238095) 20%, rgba(235,178,198,1) 75%, rgba(233,220,231,1) 98%);
+    border-radius: 15px;
+}
+.mobile{
+    font-family: 'Lobster-Regular';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-shadow: 3px 2px 3px dimgrey;
+    width: 360px;
+    height: 730px;
+    background: #E9DCE7;
+}
+#toDoList{
+width: 280px;
+height: 60px;
+background-color: #E66777;
+border-radius: 30px;
+border-color: #d88b9e;
+margin: 15px;
+color:#FFFCF4;
+box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
+:hover{
+    text-decoration: underline;
+    color: red;
+}
+}
+#finances{
+    width: 280px;
+    height: 60px;
+    background-color: #f1b6c5;
+    border-radius: 30px;
+    border-color: #faebcb;
+    margin: 15x;
+    color:#FFFCF4;
+    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    :hover{
+        text-decoration: underline;
+        color: red;
+    }
+}
+#tracker{
+width: 280px;
+height: 60px;
+background-color: #faebcb;
+border-radius: 30px;
+border-color: #faebcb;
+margin: 15px;
+color:#E66777;
+box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
+:hover{
+    text-decoration: underline;
+    color: red;
+}
+}
+
+.mobile__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.mobile__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.copyright__text{
+    font-size: 10px;
+    font-family:  serif;
+    color:#3b1727c5
+}
+@font-face{
+    font-family:'Lobster-Regular';
+    src: url("/assets/fonts/Lobster-Regular.ttf");
+}

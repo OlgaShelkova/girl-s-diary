@@ -10,62 +10,63 @@
     <link rel="shortcut icon" href="" type="" />
 </head>
   <body>
-<!-- 
-    <div class="container">
-      <header class="header">
-        <nav class="menu">
-          <div class="app-logo">
-            <a href="index.html"
-              ><img
-                class="logo_icon"
-                src=""
-                alt="icon for account"
-            /></a>
-    </div> -->
+
 <div class="mobile">
+  <!-- Секция с заголовком -->
   <div class="mobile__head">
-    <img src="" id="mainLogo" alt="logo">
-    <img src="" id="icon_" alt="">
-    <img src="" id="icon_" alt="">
-    <img src="" id="icon_" alt="">
+      <div class="iconsHead">
+      <a href="./index.html"><img src="./assets/images/logo/logo.png" class="mainLogo" alt="logo"></a>
+      <a href="./habbits-tracker.html"><img src="./assets/images/icons/smiley-face-emoticon.png" id="iconEmotion" alt="face"></a>
+      <a href="./finances.html"><img src="./assets/images/icons/wallet.png" id="iconCalculate" alt="walet"></a>
+      </div>
   </div>
-  <div class="mobile__content">
-    <img src="./assets/img/Girl_pencils.jpg" id="todolistImg" alt="girl with macbook">
-    <div class="sectionMainName">
-        <h1 id="name">Список дел</h1>
-    </div>
-    <section class="todo">
+  <!-- Блок с контентом  -->
+    <div class="mobile__content">
+      <img src="./assets/images/list-lady.jpg" id="todolistImg" alt="girl with macbook">
+      <div class="sectionMainName">
+        <h1 id="nameMain">Список дел</h1>
+      </div>
+      <!-- Секция с задачами к выполнению и кнопкой "Добавить"  -->
+      <section class="todo">
         <form class="formToDo" onsubmit="addNewTask(event)">
-            <input type="text" id="taskInput" placeholder="Например, изучить JS">
-            <button id="addButton" type="submit">Добавить</button>
+            <input type="text" id="taskInput" placeholder="         Введите текст задачи">
+            <button id="addButton" type="submit">Добавить в список</button>
         </form>
-    </section>
-    <section class="taskArea">
-    </section>
-    <button id="clearButton" type="button">Очистить</button>
+      </section>
+      <!-- Секция со списком задач -->
+      <section class="taskArea">
+        <!-- Скрытый блок с советами -->
+        <div class="adviceContent">
+          <h2>Советы для продуктивности от ДСД.</h2> 
+          <p>1. Начинайте день в одно и то же время</p>
+          <p>2. Повышайте концентрацию</p>
+          <p>3. Следите за качеством сна</p>
+          <p>4. Повышайте выносливость мозга</p>            
+          <p>5. Прокачивайте навык решения задач</p>  
+          <p>7. Верьте в себя!</p>
+        </div>
+      </section>
+      <button id="clearButton" type="button">Очистить</button>
+      <!-- Секция с завершенными заданиями -->
       <section class="finishedTasks">
         <div id="gifContainer" class="gif-container">
           <iframe src="https://giphy.com/embed/Xf8OQpipEl7eMlXtsH" width="180" height="155" frameBorder="0" class="giph" allowFullScreen></iframe>
-          <img src="">
-        </div>
+          <img src="" id="iconForHints">
         </div>
       </section>
-</div>
-  <div class="mobile__footer">
-    <!-- <div class="icons">
-      <a href="#"><img src="" alt="Facebook" /></a>
-      <a href="#"><img src="" alt="Instagram" /></a>
-      <a href="#"><img src="" alt="VK" /></a>
-  </div> -->
-  <div class="copyright">
-    <p class="copyright__text">&copy Copyright 2024 by Butterflies team</p>
+      <!-- Футер с активными иконками -->
+      <div class="mobile__footer">
+      <a href="#" onclick="toggleAdvice()">
+          <img class="footerIcon1" src="/assets/images/icons/like_icon.svg" alt="heart" />
+      </a>
+          <a href="https://blog.mann-ivanov-ferber.ru/2016/07/28/30-sovetov-dlya-povysheniya-produktivnosti/"><img  class="footerIcon2" src="/assets/images/icons/share_arrow_icon.svg" alt="share icon" /></a>
+          <div class="copyright">
+            <p class="copyright__text">&copy Copyright 2024 by Butterflies team</p>
+          </div>
+      </div>
   </div>
-  </div>
 </div>
-
-
-    
-    
+<!-- скрипт -->
     <script async src="./style/todo.js"></script>
   </body>
 </html>
