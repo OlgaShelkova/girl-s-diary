@@ -204,7 +204,6 @@ position:absolute;
 @media (min-width: 925px) {
     .adviceContent{
         font-style: bold;
-        font-size: 15px;
         width: 30%;
         padding: 1px;
     }
@@ -213,8 +212,8 @@ position:absolute;
 @media (min-width: 480px) {
     .adviceContent{
         font-style: bold;
-        font-size: 10px;
         width: 20%;
         padding: 1px;
+        font-size: 2vh
     }
 }
