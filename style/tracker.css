@@ -99,9 +99,8 @@ background-color: #FAEBCB;
 /*кнопка календарь*/
 #calendar_date {
     width: 18%;
+
     margin-top: 5px;
-    border-radius: 50%;
-    border: none;
 }
 
 #calendar_date img {
@@ -159,9 +158,11 @@ h2 {
     margin-top: 20px;
     padding: 10px;
 }
+
 #image-list :hover {
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 10, 1);
 }
+
 
 #image-list img {
     width: 17%;
@@ -170,7 +171,7 @@ h2 {
 }
 
 #image-list img.selected {
-opacity: 0.58;
+opacity: 0.78;
 }
 
 #image-grid {
