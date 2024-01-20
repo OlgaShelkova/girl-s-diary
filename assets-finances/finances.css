@@ -6,7 +6,6 @@
   font-family: 'SawarabiGothic';
   src: url(/girl-s-diary/assets/fonts/SawarabiGothic-Regular.ttf);
 }
-
 .container {
     display: grid;
     width: 360px;
@@ -16,100 +15,84 @@
     background-color: #F1B6C5;
     font-family: sans-serif;
   }
-  
-  .header {
+  .header__logo{
     grid-row: 1 / 2;
     grid-column: 1 / 3;
     height: 51px;
     width: 360px;
     background: linear-gradient(0deg, rgba(206, 17, 17, 0.1), rgba(216, 14, 14, 0.1)), 
     linear-gradient(90deg, #E66777 0%, rgba(240, 161, 171, 0.99) 25%, #FAEBCB 50%);
-    border: 1px solid #0000001A
+    border: 1px solid #0000001A;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
   }
-
 .iconsHead{
-  display: grid;
-  grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  gap: 8px;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-end;
+  align-items: center;
+  margin-left: 150px;
 }
   #mainLogo{
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-    justify-self: start;
-    align-self: self-start;
-    margin-top: 5%;
+    height: 36px;
+    width: 120px;
+    margin-left: 100%;
+    margin-top:10px;
   }
-  #mainLogo2{
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-    justify-self: end;
-    align-self: self-end;
-  }
-
   #emoticon{
-    grid-row: 1 / 2;
-    grid-column: 4 / 5;
     height: 35px;
     width: 35px;
-     /* border: solid 1px red; */
+    margin-left: 10%;
   }
-
   #checklist{
-    grid-row: 1 / 3;
-    grid-column: 5 / 6;
     height: 35px;
     width: 35px;
- /* border: solid 1px red; */
-
   }
-
-  
   .photo-finances {
     grid-row: 2 / 3;
     grid-column: 1 / 3;
-    /* border: solid 1px red; */
     display: block;
     margin-left: auto;
     margin-right: auto
-
   }
-  
   .title {
     grid-row: 3 / 4;
     grid-column: 1 / 3;
-    /* border: solid 1px red; */
     text-align: center;
     font-family: 'Lobster';
     color: #723036;
     font-weight: 100;
     font-size: 20px;
   }
-  
   .income {
     grid-row: 4 / 6;
     grid-column: 1 / 2;
     text-align: center;
-    /* border: solid 1px red; */
   }
-  
   .costs {
     grid-row: 4 / 6;
     grid-column: 2 / 3;
-    /* border: solid 1px red; */
     text-align: center;
+  }
+  .total-numb{
+    margin-top: 55px;
+  }
+    .result-block{
+    margin-top: 15px;
   }
   .money-box{
     grid-row: 6 / 7;
     grid-column: 2 / 3;
-    /* border: solid 1px red; */
     text-align: center;
+    margin-top: 55px;
   }
-
   h6{
     padding-top: 0;
     margin: 0;
   }
-
   h2{
     padding-top: 0;
     margin: 0;
@@ -120,32 +103,52 @@
     margin: 0;
   }
   input{
-    border: 1px solid #723036
+    border: 1px solid #723036;
+    border-radius: 15px;
   }
-
   #btnAdvice{
     background: linear-gradient(0deg, rgba(214, 184, 184, 0.54), rgba(255, 97, 97, 0.54)),
 linear-gradient(0deg, #E9DCE7, #E9DCE7);
     border: 1px solid #723036
   }
-
   .footer {
     grid-row: 9 / 10;
     grid-column: 1 / 3;
-    /* border: solid 1px red; */
+    /* position: fixed; */
+    bottom: 10;
+    padding: 10px;
   }
-  
-  .footerIcon2 {
-      margin-left: 5px; 
-      width: 30px; 
-      float: right;
-  }
-  
+
+  .footerIcon1,
+.footerIcon2 {
+    width: 30px; 
+    margin-top: 0; 
+    margin-left: 250px;
+    margin-bottom: 0;
+}
+.footerIcon2 {
+  margin-left: 5px; 
+}
   .copyright {
       text-align: center;
   }
-  
   .copyright__text {
       margin: 5px 0; 
       font-size: 8px;
   }
+  /*Стили для совета*/
+
+.adviceContent{
+  font-style: italic;
+  position:absolute;
+  width: 20%;
+  background: #faf9fa;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  color:#f14377;
+  visibility: hidden; 
+  opacity: 0;
+  transition: 0.7s;
+  font-family: 'Montserrat-VariableFont_wght';
+}
