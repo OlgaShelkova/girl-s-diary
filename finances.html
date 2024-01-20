@@ -12,22 +12,21 @@
   <body>
 
       <div class="container">
-			<header class="header">
+          <div class="header__logo">
+          <a href='./index.html'> <img src="./assets/images/logo/logo.png" id="mainLogo" alt="logo" /></a>
           <div class="iconsHead">
-          <img src="./assets-finances/diary.png" id="mainLogo" alt="logo" />
-          <img src="./assets-finances/modernGirl.png" id="mainLogo2" alt="logo" />
-          <a href="/girl-s-diary/habbits-tracker.html"><img src="/girl-s-diary/assets/images/icons/smiley-face-emoticon.png" id="emoticon" alt="smiley-face-emoticon" /></a>
-          <a href="/girl-s-diary/to-do-list.html"><img src="/girl-s-diary/assets/images/icons/checklist.png" id="checklist" alt="checklist" /></a>
+          <a href="./habbits-tracker.html"><img src='./assets/images/icons/smiley-face-emoticon.png' id="emoticon" alt="smiley-face-emoticon" /></a>
+          <a href="./to-do-list.html"><img src='./assets/images/icons/checklist.png' id="checklist" alt="checklist" /></a>
           </div>
-      </header>
+          </div>
 			<div class="photo-finances">
         <img src="./assets-finances/photo-finances.png" alt="девушка с ноутбуком" />
       </div>
 			<div class="title"><h2>УЧЕТ ФИНАНСОВ</h2></div>
 
-			<div class="income">    <!-- начало income Доходов -->
+			<div class="income">   
         <h3>Доход в месяц</h3>
-        <div class="input-wrapper">  <!-- начало блока с инпутами для дохода -->
+        <div class="input-wrapper">  
           <input 
           type="number" 
           placeholder="Зарплата" 
@@ -46,13 +45,11 @@
           id="income-another2"
           class="input"
           >
-        </div>           <!-- конец инпутов для дохода -->
-
-      </div>             <!-- закрывашка income -->
-
-			<div class="costs">    <!-- начало Расходов -->
+        </div>         
+      </div>
+			<div class="costs">
         <h3>Расходы</h3>
-        <div class="input-wrapper">  <!-- начало блока с инпутами для расхода -->
+        <div class="input-wrapper">
           <input 
           type="number" 
           placeholder="Аренда квартиры" 
@@ -71,11 +68,19 @@
           id="costs-another"
           class="input"
           >
-        </div>           <!-- конец инпутов для расхода -->
-      </div>      <!-- закрывашка расходов -->
-
-
-      <div class="total-numb">        <!-- открывашка значений для вычисления -->
+        </div>
+      </div>
+  <!-- Скрытый блок с советами -->
+  <div class="adviceContent">
+    <h3>Финансовые советы от ДСД.</h3> 
+    <p>1. Тратьте меньше, чем получаете</p>
+    <p>2. Оптимизируйте все ваши плановые расходы</p>
+    <p>3. Не обращайте внимания на то, как другие тратят свои деньги</p>
+    <p>4. Экономьте на вредных привычках</p>            
+    <p>5. Верьте в себя!</p>  
+  </div>
+</section>
+      <div class="total-numb">
 		<div class="total-numb-month">
         <h6>Доступно в месяц(без копилки)</h6>
     <input 
@@ -96,7 +101,7 @@
             readonly
             >
 </div>
-      </div>            <!-- закрывашка значений для вычисления -->
+      </div> 
 	
       <div class="money-box">
         <h6>Копилка (сколько откладываем?)</h6>
@@ -105,7 +110,7 @@
 
       </div>
       <div class="result-block">
-        <div class="tottal-numb">
+        <div class="result-block-save">
           <h6>Копим:</h6>
           <input 
           type="number" 
@@ -114,7 +119,7 @@
           readonly
           >
         </div>
-        <div class="total-numb">
+        <div class="result-block-spend">
           <h6>Тратим:</h6>
           <input 
           type="number" 
@@ -124,18 +129,16 @@
           >
         </div>
       </div>
-      <div class="advice">
-        <button id="btnAdvice">Хочу совет &#4326;</button>
-      </div>
-
-
-      <footer class="footer">
-        <a href="#"><img  class="footerIcon2" src="/girl-s-diary/assets/images/icons/share_arrow_icon.svg" alt="share icon" /></a>
+      <div class="footer">
+        <a href="#" onclick="toggleAdvice()">
+          <img class="footerIcon1" src="./assets/images/icons/like_icon.svg" alt="heart" />
+      </a>
+        <a href="https://blog.mann-ivanov-ferber.ru/2020/07/03/dengi-est-10-shagov-kotorye-nauchat-upravlyat-svoim-byudzhetom/" target="_blank"><img  class="footerIcon2" src="/girl-s-diary/assets/images/icons/share_arrow_icon.svg" alt="share icon" /></a>
         <div class="copyright">
           <p class="copyright__text">&copy Copyright 2024 by Butterflies team</p>
         </div>
-      </footer>
-    </div>   <!-- закрывашка контейнера -->
+      </div>
+    </div>
   <script src="./assets-finances/finance.js"></script>
   </body>
 </html>
