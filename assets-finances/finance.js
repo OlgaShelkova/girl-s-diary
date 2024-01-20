@@ -62,20 +62,8 @@ let advices = [["Тратьте меньше, чем получаете"],
 ["Экономьте на вредных привычках"]];
 
 document.getElementById("btnAdvice").addEventListener("click", function() {
-   
-    // выбираем случайную фразу из массива
-    // данные в массив могут попадать и через api
     let advice = advices[ Math.floor( Math.random() * advices.length ) ];
 	alert(advice);
-
-    // цитата
-    // var phrase = document.querySelector("#phrase");
-   
-    // автор
-    // var author = document.querySelector("#author");
-
-    // phrase.innerHTML = quote[0];
-    // author.innerHTML = quote[1];  
 });
 
 

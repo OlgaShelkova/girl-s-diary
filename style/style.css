@@ -70,6 +70,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgb(241,77,118);
+    background: linear-gradient(90deg, rgba(241,77,118,0.8407738095238095) 20%, rgba(235,178,198,1) 75%, rgba(233,220,231,1) 98%);
+    border-radius: 15px;
 }
 .mobile{
     font-family: 'Lobster-Regular';
@@ -90,7 +93,10 @@ border-color: #d88b9e;
 margin: 15px;
 color:#FFFCF4;
 box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
-
+:hover{
+    text-decoration: underline;
+    color: red;
+}
 }
 #finances{
     width: 280px;
@@ -101,7 +107,10 @@ box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
     margin: 15x;
     color:#FFFCF4;
     box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
-
+    :hover{
+        text-decoration: underline;
+        color: red;
+    }
 }
 #tracker{
 width: 280px;
@@ -112,7 +121,10 @@ border-color: #faebcb;
 margin: 15px;
 color:#E66777;
 box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
-;
+:hover{
+    text-decoration: underline;
+    color: red;
+}
 }
 
 .mobile__content{
@@ -136,4 +148,3 @@ box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
     font-family:'Lobster-Regular';
     src: url("/assets/fonts/Lobster-Regular.ttf");
 }
-
