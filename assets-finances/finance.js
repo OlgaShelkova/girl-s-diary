@@ -55,16 +55,18 @@ const calculationPrecents = () => {
 	totalYearInput.value = totalYear;
 }
 
-//Рубрика "Хочу совет"
-let advices = [["Тратьте меньше, чем получаете"], 
-["Оптимизируйте все ваши плановые расходы"], 
-["Не обращайте внимания на то, как другие тратят свои деньги"], 
-["Экономьте на вредных привычках"]];
+//код для функции с советами
+function toggleAdvice() {
+    let boxAdvices = document.querySelector('.adviceContent');
 
-document.getElementById("btnAdvice").addEventListener("click", function() {
-    let advice = advices[ Math.floor( Math.random() * advices.length ) ];
-	alert(advice);
-});
+    if (boxAdvices.style.visibility === 'hidden' || boxAdvices.style.visibility === '') {
+        boxAdvices.style.visibility = 'visible';
+        boxAdvices.style.opacity = '1';
+    } else {
+        boxAdvices.style.visibility = 'hidden';
+        boxAdvices.style.opacity = '0';
+    }
+}
 
 
 
