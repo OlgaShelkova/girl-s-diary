@@ -15,50 +15,55 @@
     src: url("/assets/fonts/SawarabiGothic-Regular.ttf");
     font-weight: 400;
 }
-/* Общие стили */
-.mobile__head {
-    display: flex;
+/* Заголовок */
+.mobile__head{
+    display:flex;
     background: linear-gradient(90deg, #E66777 0%, rgba(240, 161, 171, 0.99) 25%, #FAEBCB 50%);
     flex-direction: row;
     margin-bottom: 10px;
-    justify-content: flex-end; 
-    padding: 10px;
-    height:10%;
-}
-#iconEmotion{
-    width:100%;
-    height: 70px;
-}
-#iconCalculate{
-    width:100%;
-    height: 70px;
-    margin-left: 10%;
-}
-.mainLogo{
-    width: 100%;
-    margin-top:10px;
 }
 .iconsHead{
-    width:45%;
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
     align-content: flex-end;
     align-items: center;
+    margin-left: 50px;
 }
-.mobile__content {
+#iconEmotion{
+    width:100%;
+    height: 40px;
+}
+#iconCalculate{
+    width:100%;
+    height: 40px;
+    margin-left: 10%;
+}
+.mainLogo{
+    width: 77%;
+    margin-left: 40%;
+    margin-top:10px;
+}
+/* Стили для тела стр */
+.mobile__content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
 }
-
-.mobile {
-    width: 100%; 
-    height: 100%; 
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#todolistImg{
+    width: 40%;
+    border-radius: 20px;
+}
+.mobile{
+    width: 360px;
+    height: 110vh;
     background: #EF8B98;
 }
-
 .sectionMainName{
     width: 250px;
     display: flex;
@@ -75,17 +80,41 @@
     text-shadow: 3px 4px 4px rgb(38, 37, 37);
 }
 /* Стили для поля с заданиями и делами */
-.taskArea, .finishedTasks {
-    width: 100%; 
+.taskArea{
+    height:110px;
+    width:85%;
     margin: 5px;
-}
-.finishedTasks{
-    color:green;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
-    height:30vh;
+    color:green;
+    font-style: italic;
+}
+.todo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7%;
+}
+.todoButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3%;
+}
+/* Стили для кнопки "Добавить в список" */
+#addButton{
+    width: 280px;
+    height: 60px;
+    background-color: #F5D1D6;
+    border-radius: 30px;
+    border-color: #C17882;
+    margin: 15px;
+    color:#f14377;
+    font-family: 'SawarabiGothic-Regular';
+    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
 }
 /* Стили для ввода текста */
 #taskInput{
@@ -101,120 +130,86 @@
     color: #050505;
     box-shadow: inset 0 0 0 2px  #F14377 !important;
 }
-/* Стили для поля с заданиями и делами */
-.taskArea{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Стили для поля с завершенными задачами */
+.finishedTasks{
     color:green;
-    font-style: italic;
-}
-.todo{
+    height:150px;
+    width:85%;
+    margin: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-left: 7%;
 }
 /* Гифка */
 #gifContainer{
-    display: none;
-    position:absolute;
-    }
-    .giph{
-        width: 255px;
-        height: 235px;
-        margin-left: -90px;
-    }
-
-/* Стили для кнопки "Добавить в список" */
-#addButton{
-    width: 60vh; 
-    height: 60px;
-    margin: 15px;
-    background-color: #F5D1D6;
-    border-radius: 30px;
-    border-color: #C17882;
-    color:#f14377;
-    font-family: 'SawarabiGothic-Regular';
-    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
+display: none;
+position:absolute;
+}
+.giph{
+    width: 255px;
+    height: 235px;
+    margin-left: -90px;
 }
 /* Кнопка очистить */
 #clearButton{
-    width: 60vh; 
+    width: 280px;
     height: 60px;
-    margin: 15px;
-    margin-right: 10vh;
     background-color: #F5D1D6;
     border-radius: 30px;
     border-color: #C17882;
+    margin: 15px;
     color:#f14377;
     font-family: 'SawarabiGothic-Regular';
     box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
 }
-/* Стили для ввода текста */
-#taskInput {
-    width:  60vh; 
-    height: 55px;
-    margin: 5px;
-}
-
 /* Секция футера */
 .mobile__footer {
-    /* position: fixed; */
-    width: 100%; 
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+}
+.footerIcon1,
+.footerIcon2 {
+    width: 30px;
+    margin-top: 5px;
+    margin-left: 220px;
 }
 .footerIcon2 {
-    width: 5vh;
-    margin-top: 5px;
+    margin-left: 5px;
 }
-.footerIcon1{
-    margin-right:1vh;
-    width: 5vh;
-    margin-top: 5px;
-}
-.copyright{
-    width:100%;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.copyright {
+    text-align: center;
 }
 .copyright__text{
     font-size: 10px;
 }
-/* Стили для совета */
-.adviceContent {
+/*Стили для совета*/
+.adviceContent{
     font-style: italic;
-    position: absolute;
-    width: 90%; 
-    background: #faf9fa;
+    position:absolute;
+    width: 40vh;
+    background: #FAF9FA;
     padding: 5px;
     box-sizing: border-box;
     border-radius: 40px;
-    color: #f14377;
+    color:#f14377;
     visibility: hidden;
     opacity: 0;
     transition: 0.7s;
-    font-size: 20px;
     font-family: 'Montserrat-VariableFont_wght';
 }
-
-@media screen and (min-width: 925px) {
-    .adviceContent {
+@media (min-width: 925px) {
+    .adviceContent{
         font-style: bold;
-        width: 40%; 
-        padding: 10px;
+        width: 30%;
+        padding: 1px;
     }
 }
-
 @media (min-width: 480px) {
-    .adviceContent {
+    .adviceContent{
         font-style: bold;
-        width: 80%; 
-        padding: 10px;
+        width: 25%;
+        padding: 1px;
+        font-size: 2vh
     }
 }
