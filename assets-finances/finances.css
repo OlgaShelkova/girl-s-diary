@@ -37,7 +37,7 @@
   margin-left: 150px;
 }
   #mainLogo{
-    height: 36,58px;
+    height: 36px;
     width: 120px;
     margin-left: 100%;
     margin-top:10px;
@@ -103,7 +103,8 @@
     margin: 0;
   }
   input{
-    border: 1px solid #723036
+    border: 1px solid #723036;
+    border-radius: 15px;
   }
   #btnAdvice{
     background: linear-gradient(0deg, rgba(214, 184, 184, 0.54), rgba(255, 97, 97, 0.54)),
