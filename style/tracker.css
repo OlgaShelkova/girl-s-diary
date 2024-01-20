@@ -32,25 +32,31 @@ background-color: #FAEBCB;
     flex-direction: row;
     margin-bottom: 2%;
 }
-.header__logo-container{
-    display:flex;
-    flex-direction: row;
-    padding: 10px 0 0;
-    width: 100%;
+.header__logo-container {
+    display: grid;
+    grid-template-columns: 75% 18% 18%; 
+    grid-gap: 5px; 
+    align-items: center; 
+    justify-content: center; 
+    padding-left: 35%;
 }
+
+.header__logo-container a {
+    display: block; 
+    text-align: center;
+}
+
 #iconChecklist{
     width:10vw;
     height: 10vw;
-    margin-left: 155px;
 }
+
 #iconCalculate{
     width:10vw;
     height: 10vw;
-    margin-left: 10px;
 }
 .mainLogo{
     width: 35vw;
-    margin-left: 88%;
     margin-top:5px;
 }
 .menu{
