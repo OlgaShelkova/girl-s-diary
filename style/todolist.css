@@ -1,4 +1,3 @@
-/*шрифт заголовков*/
 @font-face {
     font-family: 'Lobster-Regular';
     src: url("/assets/fonts/Lobster-Regular.ttf");
@@ -11,7 +10,7 @@
     font-weight: 400;
 }
 /*шрифт кнопок*/
-@font-face { 
+@font-face {
     font-family: 'SawarabiGothic-Regular';
     src: url("/assets/fonts/SawarabiGothic-Regular.ttf");
     font-weight: 400;
@@ -34,7 +33,6 @@
 #iconEmotion{
     width:100%;
     height: 40px;
-
 }
 #iconCalculate{
     width:100%;
@@ -65,7 +63,6 @@
     width: 360px;
     height: 110vh;
     background: #EF8B98;
-    
 }
 .sectionMainName{
     width: 250px;
@@ -75,7 +72,6 @@
     border: 5px;
     color: #E9DCE7;
 }
-
 #nameMain{
     font-family:'Lobster-Regular';
     text-transform: uppercase;
@@ -93,22 +89,28 @@
     align-items: center;
     color:green;
     font-style: italic;
-}  
+}
 .todo{
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
     justify-content: center;
     margin-left: 7%;
 }
+.todoButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3%;
+}
 /* Стили для кнопки "Добавить в список" */
 #addButton{
-
     width: 280px;
     height: 60px;
-    background-color: #f5d1d6;
+    background-color: #F5D1D6;
     border-radius: 30px;
-    border-color: #c17882;
+    border-color: #C17882;
     margin: 15px;
     color:#f14377;
     font-family: 'SawarabiGothic-Regular';
@@ -123,10 +125,10 @@
     box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .formToDo input[type="text"]:focus {
-    background-color: #e0a3b6; 
+    background-color: #E0A3B6;
     border-radius: 2px;
     color: #050505;
-    box-shadow: inset 0 0 0 2px  #f14377 !important;
+    box-shadow: inset 0 0 0 2px  #F14377 !important;
 }
 /* Стили для поля с завершенными задачами */
 .finishedTasks{
@@ -140,7 +142,7 @@
 }
 /* Гифка */
 #gifContainer{
-display: none;  
+display: none;
 position:absolute;
 }
 .giph{
@@ -152,9 +154,9 @@ position:absolute;
 #clearButton{
     width: 280px;
     height: 60px;
-    background-color: #f5d1d6;
+    background-color: #F5D1D6;
     border-radius: 30px;
-    border-color: #c17882;
+    border-color: #C17882;
     margin: 15px;
     color:#f14377;
     font-family: 'SawarabiGothic-Regular';
@@ -164,39 +166,34 @@ position:absolute;
 .mobile__footer {
     position: fixed;
     bottom: 0;
-    padding: 10px; 
+    padding: 10px;
 }
-
 .footerIcon1,
 .footerIcon2 {
-    width: 30px; 
-    margin-top: 5px; 
+    width: 30px;
+    margin-top: 5px;
     margin-left: 220px;
 }
-
 .footerIcon2 {
-    margin-left: 5px; 
+    margin-left: 5px;
 }
-
 .copyright {
     text-align: center;
 }
 .copyright__text{
     font-size: 10px;
 }
-
 /*Стили для совета*/
-
 .adviceContent{
     font-style: italic;
     position:absolute;
     width: 40vh;
-    background: #faf9fa;
+    background: #FAF9FA;
     padding: 5px;
     box-sizing: border-box;
     border-radius: 40px;
     color:#f14377;
-    visibility: hidden; 
+    visibility: hidden;
     opacity: 0;
     transition: 0.7s;
     font-family: 'Montserrat-VariableFont_wght';
@@ -207,12 +204,11 @@ position:absolute;
         width: 30%;
         padding: 1px;
     }
-
 }
 @media (min-width: 480px) {
     .adviceContent{
         font-style: bold;
-        width: 20%;
+        width: 25%;
         padding: 1px;
         font-size: 2vh
     }
